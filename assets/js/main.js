@@ -10,8 +10,8 @@ let taxMoney = document.querySelectorAll('td.taxMoney');
 let discount = document.querySelectorAll('td.discount')
 let totalItem = document.querySelectorAll('td.totalItem');
 let totalMoneyFinal = document.querySelector('td.totalMoneyFinal');
-let totalTaxFinal = document.querySelector('td.totalTaxFinal')
-
+let totalTaxFinal = document.querySelector('td.totalTaxFinal');
+let discountMoney = document.querySelectorAll('td.discountMoney')
 
 for (let i = 0; i < minus.length; i++) {
     plus[i].onclick = function () {
@@ -30,9 +30,13 @@ for (let i = 0; i < minus.length; i++) {
         if (isNaN(discountReferent)) {
             var totalnew = numberCurrent * priceCurrent + taxnew - (numberCurrent * priceCurrent) * 0;
             totalItem[i].innerHTML = `$${totalnew}`;
+            var discountMoneyItem = numberCurrent * priceCurrent*0;
+            discountMoney[i].innerHTML = `$${discountMoneyItem}`;
         } else {
             var totalnew = numberCurrent * priceCurrent + taxnew - (numberCurrent * priceCurrent) * discountReferent;
             totalItem[i].innerHTML = `$${totalnew}`;
+            var discountMoneyItem = numberCurrent * priceCurrent*discountReferent;
+            discountMoney[i].innerHTML = `$${Math.round(discountMoneyItem)}`;
         }
 
         // console.log('discountReferent',discountReferent)
@@ -77,9 +81,13 @@ for (let i = 0; i < minus.length; i++) {
         if (isNaN(discountReferent)) {
             var totalnew = numberCurrent * priceCurrent + taxnew - (numberCurrent * priceCurrent) * 0;
             totalItem[i].innerHTML = `$${totalnew}`;
+            var discountMoneyItem = numberCurrent * priceCurrent*0;
+            discountMoney[i].innerHTML = `$${discountMoneyItem}`;
         } else {
             var totalnew = numberCurrent * priceCurrent + taxnew - (numberCurrent * priceCurrent) * discountReferent;
             totalItem[i].innerHTML = `$${totalnew}`;
+            var discountMoneyItem = numberCurrent * priceCurrent*discountReferent;
+            discountMoney[i].innerHTML = `$${Math.round(discountMoneyItem)}`;
         }
         
         // Tính tổng tiền toàn bộ khi giảm món
@@ -122,3 +130,9 @@ for (let i = 0; i < minus.length; i++) {
 
 
 }
+// let i =0;
+// while(i<100000){
+//     // console.log('The random: ',Math.random()*100);
+//     // // console.log(123);
+//     // i+=0.5;
+// }

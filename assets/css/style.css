@@ -1,10 +1,16 @@
 body{
-    background-color: #61aaee;
-    color: #fff;
+    /* background-color: #61aaee; */
+    color: #000;
     font-size: 20px;
-    /* background-image: url("https://i.pinimg.com/originals/7d/c8/7d/7dc87dae0d4220d6cf9e43365c025e18.gif"); */
+    background-image: url("https://1.bigdata-vn.com/wp-content/uploads/2021/11/1637322476_504_Tai-1000-hinh-nen-dong-dep-lung-linh-cho-dien.gif");
     background-repeat: no-repeat;
     background-size: cover;
+}
+.container{
+    width: 90% !important;
+}
+.header{
+    margin-top: 48px !important;
 }
 table,th,td{
     border: 1px solid #000;
@@ -14,7 +20,8 @@ th,td{
     padding: 6px 12px;
 }
 table{
-    margin: 0 auto;
+    /* display: block; */
+    margin: 0 auto !important;
 }
 h3.title{
     text-align: center;
@@ -42,4 +49,14 @@ td>span:hover{
 
 .labelTotalMoneyFinal,.labelTotalTaxFinal{
     text-align: right;
+    font-weight: 700;
+}
+.totalMoneyFinal,.totalTaxFinal{
+    font-weight: 700;
+    color: blue;
+}
+.header>h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 24px;
 }

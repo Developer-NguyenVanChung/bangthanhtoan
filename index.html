@@ -6,105 +6,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2</title>
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <h2>Công ty cổ phần Hoa Sen</h2>
-    <h3 class="title">Bảng thanh toán</h3>
-    <table>
-        <thead>
-            <tr class="rowTable">
-                <th>Stt</th>
-                <th>Product</th>
-                <th colspan="4">Number</th>
-                <th>Price</th>
-                <th>Tax</th>
-                <th>Discount</th>
-                <th>Tax Money</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="rowTable">
-                <td>1</td>
-                <td>Coofee</td>
-                <td><span class="number">1</span></td>
-                <td><span class="minus">-</span></td>
-                <td><span class="plus">+</span></td>
-                <td><span class="remove">x</span></td>
-                <td class="price">$29000</td>
-                <td class="tax">8%</td>
-                <td class="discount">2%</td>
-                <td class="taxMoney"></td>
-                <td class="totalItem">$31900</td>
-            </tr>
-            <tr class="rowTable">
-                <td>1</td>
-                <td>Coofee</td>
-                <td><span class="number">1</span></td>
-                <td><span class="minus">-</span></td>
-                <td><span class="plus">+</span></td>
-                <td><span class="remove">x</span></td>
-                <td class="price">$29000</td>
-                <td class="tax">10%</td>
-                <td class="discount">--</td>
-                <td class="taxMoney"></td>
-                <td class="totalItem">$31900</td>
-            </tr>
-            <tr class="rowTable">
-                <td>1</td>
-                <td>Coofee</td>
-                <td><span class="number">1</span></td>
-                <td><span class="minus">-</span></td>
-                <td><span class="plus">+</span></td>
-                <td><span class="remove">x</span></td>
-                <td class="price">$29000</td>
-                <td class="tax">12%</td>
-                <td class="discount">5%</td>
-                <td class="taxMoney"></td>
-                <td class="totalItem">$31900</td>
-            </tr>
-            <tr class="rowTable">
-                <td>1</td>
-                <td>Coofee</td>
-                <td><span class="number">1</span></td>
-                <td><span class="minus">-</span></td>
-                <td><span class="plus">+</span></td>
-                <td><span class="remove">x</span></td>
-                <td class="price">$29000</td>
-                <td class="tax">15%</td>
-                <td class="discount">7%</td>
-                <td class="taxMoney"></td>
-                <td class="totalItem">$31900</td>
-            </tr>
-            <tr class="rowTable">
-                <td>1</td>
-                <td>Coofee</td>
-                <td><span class="number">1</span></td>
-                <td><span class="minus">-</span></td>
-                <td><span class="plus">+</span></td>
-                <td><span class="remove">x</span></td>
-                <td class="price">$29000</td>
-                <td class="tax">20%</td>
-                <td class="discount">1%</td>
-                <td class="taxMoney"></td>
-                <td class="totalItem">$31900</td>
-            </tr>
-            <tr>
-                <td class="labelTotalMoneyFinal" colspan = '10'>Total Final: </td>
-                <td class="totalMoneyFinal"></td>
-            </tr>
-            <tr>
-                <td class="labelTotalTaxFinal" colspan='10'>Total tax Final: </td>
-                <td class="totalTaxFinal"></td>
-            </tr>
+<body class = 'bg-primary text-light'>
+    <div class="container text-center mt-3 header">
+        <h1>Công ty cổ phần Hoa Sen</h1>
+        <h3 class="title">Bảng thanh toán</h3>
+    </div>
+    <div class="container">
+        <table class="table table-bordered table-striped table-light text-dark"> 
+            <thead class="table-primary">
+                <tr class="rowTable">
+                    <th>Stt</th>
+                    <th>Product</th>
+                    <th colspan="4">Number</th>
+                    <th>Price</th>
+                    <th>Tax</th>
+                    <th>Discount</th>
+                    <th>Tax Money</th>
+                    <th>Discount Money</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rowTable">
+                    <td>1</td>
+                    <td>Coofee</td>
+                    <td><span class="number">1</span></td>
+                    <td><span class="minus">-</span></td>
+                    <td><span class="plus">+</span></td>
+                    <td><span class="remove">x</span></td>
+                    <td class="price">$29000</td>
+                    <td class="tax">8%</td>
+                    <td class="discount">2%</td>
+                    <td class="taxMoney"></td>
+                    <td class="discountMoney"></td>
+                    <td class="totalItem">$31900</td>
+                </tr>
+                <tr class="rowTable">
+                    <td>1</td>
+                    <td>Coofee</td>
+                    <td><span class="number">1</span></td>
+                    <td><span class="minus">-</span></td>
+                    <td><span class="plus">+</span></td>
+                    <td><span class="remove">x</span></td>
+                    <td class="price">$29000</td>
+                    <td class="tax">10%</td>
+                    <td class="discount">--</td>
+                    <td class="taxMoney"></td>
+                    <td class="discountMoney"></td>
+                    <td class="totalItem">$31900</td>
+                </tr>
+                <tr class="rowTable">
+                    <td>1</td>
+                    <td>Coofee</td>
+                    <td><span class="number">1</span></td>
+                    <td><span class="minus">-</span></td>
+                    <td><span class="plus">+</span></td>
+                    <td><span class="remove">x</span></td>
+                    <td class="price">$29000</td>
+                    <td class="tax">12%</td>
+                    <td class="discount">5%</td>
+                    <td class="taxMoney"></td>
+                    <td class="discountMoney"></td>
+                    <td class="totalItem">$31900</td>
+                </tr>
+                <tr class="rowTable">
+                    <td>1</td>
+                    <td>Coofee</td>
+                    <td><span class="number">1</span></td>
+                    <td><span class="minus">-</span></td>
+                    <td><span class="plus">+</span></td>
+                    <td><span class="remove">x</span></td>
+                    <td class="price">$29000</td>
+                    <td class="tax">15%</td>
+                    <td class="discount">7%</td>
+                    <td class="taxMoney"></td>
+                    <td class="discountMoney"></td>
+                    <td class="totalItem">$31900</td>
+                </tr>
+                <tr class="rowTable">
+                    <td>1</td>
+                    <td>Coofee</td>
+                    <td><span class="number">1</span></td>
+                    <td><span class="minus">-</span></td>
+                    <td><span class="plus">+</span></td>
+                    <td><span class="remove">x</span></td>
+                    <td class="price">$29000</td>
+                    <td class="tax">20%</td>
+                    <td class="discount">1%</td>
+                    <td class="taxMoney"></td>
+                    <td class="discountMoney"></td>
+                    <td class="totalItem">$31900</td>
+                </tr>
+                <tr>
+                    <td class="labelTotalMoneyFinal" colspan = '11'>Total Final: </td>
+                    <td class="totalMoneyFinal"></td>
+                </tr>
+                <tr>
+                    <td class="labelTotalTaxFinal" colspan='11'>Total tax Final: </td>
+                    <td class="totalTaxFinal"></td>
+                </tr>
+    
+    
+            </tbody>
+        </table>
 
-
-        </tbody>
-    </table>
+    </div>
 
     <script src="./assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
