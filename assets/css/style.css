@@ -1,0 +1,45 @@
+body{
+    background-color: #61aaee;
+    color: #fff;
+    font-size: 20px;
+    /* background-image: url("https://i.pinimg.com/originals/7d/c8/7d/7dc87dae0d4220d6cf9e43365c025e18.gif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table,th,td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 6px 12px;
+}
+table{
+    margin: 0 auto;
+}
+h3.title{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+td>span{
+    font-weight: border;
+    /* color: blue; */
+    font-size: 22px;
+}
+span.remove{
+    background-color: red;
+    width: 100%;
+    padding: 4px 12px;
+    color: #fff;
+    text-align: center;
+}
+td>span:hover{
+    cursor: pointer;
+}
+
+
+.labelTotalMoneyFinal,.labelTotalTaxFinal{
+    text-align: right;
+}
